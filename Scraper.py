@@ -51,4 +51,4 @@ scheduleInfo=splitArray(scheduleInfo)
 
 
 parser = parse ()
-parser.put_array_in_calendar(scheduleInfo)
+parser.place_array_in_calendar(scheduleInfo)

@@ -63,10 +63,10 @@ class parse:
         # time[1] is AM or PM
         # time[0] is the rest of the string
         hour_and_minute = self.split_string (time[0], ":")
-        
-        if (time[1].lower() == "pm"):
-            return 12 + int (hour_and_minute[0])
-        return int (hour_and_minute[0])
+        hour = int (hour_and_minute[0])
+        if (time[1].lower() == "pm" and not hour == 12):
+            return 12 + hour
+        return hour
     
     
     def get_minute (self, string):
