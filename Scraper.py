@@ -18,8 +18,8 @@ br = Browser()
 br.open('https://my.sa.ucsb.edu/gold/login.aspx')
 br.select_form(nr=0)
 
-br.form['ctl00$pageContent$userNameText'] = raw_input("Enter your Username")
-br.form['ctl00$pageContent$passwordText'] = raw_input("Enter your Password")
+br.form['ctl00$pageContent$userNameText'] = raw_input("Enter your Username :")
+br.form['ctl00$pageContent$passwordText'] = raw_input("Enter your Password :")
 
 
 
