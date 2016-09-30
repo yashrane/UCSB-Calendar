@@ -1,6 +1,8 @@
 from mechanize import Browser
 from bs4 import BeautifulSoup
 
+from parse import parse
+
 def splitArray(scheduleArray):
     newArray = []
     for classinfo in scheduleArray:
@@ -45,3 +47,8 @@ for tag in tags:
     previous=tag.getText(strip=True)
 
 scheduleInfo=splitArray(scheduleInfo)
+
+
+
+parser = parse ()
+parser.place_array_in_calendar(scheduleInfo)
